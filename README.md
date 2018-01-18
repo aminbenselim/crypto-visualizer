@@ -7,7 +7,7 @@ Your task is to build a small React app that visualizes our ICO contributions fr
 
 1. The [Brickblock Styleguide](./brickblock-styleguide.sketch) that is in this repo. You'll find colors, typography, grids, spacing and certain elements in it. You don't have to follow it to the last pixel but the app should have a Brickblock look & feel.
 1. The fonts in the [fonts directory](./fonts)
-2. The API endpoint where you'll take the data from is [https://blockchain-ico.brickblock.io/inputs](https://blockchain-ico.brickblock.io/inputs) — this will return the following exemplary data structure:
+2. The API endpoint where you'll take the data from is [https://blockchain.brickblock.io/inputs](https://blockchain.brickblock.io/inputs) — this will return the following exemplary data structure:
 
     ```js
     {
@@ -36,7 +36,7 @@ Your task is to build a small React app that visualizes our ICO contributions fr
 
 1. Fork this GitHub repo
 1. In your forked repo, create a new React app. It can be just 1 page or it can have multiple pages.
-1. In your app, fetch data from this endpoint: [https://blockchain-ico.brickblock.io/inputs](https://blockchain-ico.brickblock.io/inputs)
+1. In your app, fetch data from this endpoint: [https://blockchain.brickblock.io/inputs](https://blockchain.brickblock.io/inputs)
 1. Visualize this data in a meaningful way. We purposefully leave this very open to see what you can come up with. There's not 1 right solution, but a few example features could be:
     1. Use charts to visualize the data
     2. Filter contributions by currency type
