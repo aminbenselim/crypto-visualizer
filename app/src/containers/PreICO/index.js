@@ -5,7 +5,6 @@ import { CurrencyTable } from '../../components';
 import { preIcoAmountsInEuro } from '../../data/selectors';
 
 const PreICO = props => {
-  console.log(props);
   return (
     <React.Fragment>
       <h1> PreICO</h1>

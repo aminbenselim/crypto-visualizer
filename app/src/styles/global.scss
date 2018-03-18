@@ -1,0 +1,22 @@
+@import './fonts';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit; /* no underline */
+}
+
+html,
+body {
+  background: $color_primary_dark_blue;
+  color: $color_primary_text_light;
+  font-family: 'Rubik', sans-serif;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,33 @@
+@import './constants';
+
+// Rubik font
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/rubik/rubik-regular.woff2') format('woff2'),
+      url('./fonts/rubik/rubik-regular.woff') format('woff');
+  font-weight: $font_normal;
+}
+
+@font-face {
+  font-family: 'Cinetype';
+  src: url('./fonts/cinetype/gtcinetype-bold.woff2') format('woff2'),
+      url('./fonts/cinetype/gtcinetype-bold.woff') format('woff');
+  font-weight: $font_bold;
+}
+
+@font-face {
+  font-family: 'Cinetype';
+  src: url('./fonts/cinetype/gtcinetype-regular.woff2') format('woff2'),
+      url('./fonts/cinetype/gtcinetype-regular.woff') format('woff');
+  font-weight: $font_normal;
+}
+
+@font-face {
+  font-family: 'Cinetype';
+  src: url('./fonts/cinetype/gtcinetype-light.woff2') format('woff2'),
+      url('./fonts/cinetype/gtcinetype-light.woff') format('woff');
+  font-weight: $font_light;
+}
+
+
