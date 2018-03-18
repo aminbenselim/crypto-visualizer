@@ -3,12 +3,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { CurrencyTable } from '../../components';
-import {
-  icoAmountsInEuro,
-  totalPreIcoAmountInEuro,
-} from '../../data/selectors';
+import { icoAmountsInEuro } from '../../data/selectors';
 
-const ICO = props => (
+const ico = props => (
   <React.Fragment>
     <h1> ICO</h1>
     <CurrencyTable data={props.icoAmountsInEuro} />
@@ -21,4 +18,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, undefined)(ICO);
+export default connect(mapStateToProps, undefined)(ico);

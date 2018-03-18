@@ -1,9 +1,9 @@
 import { createSelector } from 'reselect';
 import { valuetoEUR, formatToFixed } from '../helpers/currency';
 
-export const isLoading = state => state.isLoading;
+export const isFetching = state => state.data.isLoading;
 
-export const requestFailed = state => state.requestFailed;
+export const requestFailed = state => state.data.requestFailed;
 
 // preIco selectors
 
