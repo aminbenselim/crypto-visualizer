@@ -15,7 +15,8 @@
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
     "redux-saga-test-plan": "^3.5.1",
-    "reselect": "^3.0.1"
+    "reselect": "^3.0.1",
+    "victory": "^0.25.6"
   },
   "devDependencies": {
     "eslint-plugin-prettier": "^2.6.0",

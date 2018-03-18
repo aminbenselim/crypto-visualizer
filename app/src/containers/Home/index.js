@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { lookupData } from '../../reducers/data';
+import { lookupData } from '../../data/reducer';
+
 class Home extends React.PureComponent {
   componentDidMount() {
     this.props.getData();

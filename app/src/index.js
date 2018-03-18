@@ -5,7 +5,7 @@ import { ConnectedRouter } from 'react-router-redux';
 
 import registerServiceWorker from './registerServiceWorker';
 import store, { history } from './store';
-import { App } from './pages';
+import { App } from './containers';
 
 render(
   <Provider store={store}>

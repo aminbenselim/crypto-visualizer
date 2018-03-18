@@ -103,7 +103,10 @@ export const mockData = {
 };
 
 export const mockState = {
-  isLoading: false,
-  requestFailed: false,
-  data: mockData,
+  router: {},
+  data: {
+    isLoading: false,
+    requestFailed: false,
+    transactions: mockData,
+  },
 };

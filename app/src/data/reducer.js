@@ -11,7 +11,7 @@ export const lookupData = makeRequestActionCreators('LOOKUP_DATA');
 const defaultState = {
   isLoading: false,
   requestFailed: false,
-  data: [],
+  transactions: [],
 };
 
 export const dataReducer = (initialState = defaultState, action) =>
@@ -27,7 +27,7 @@ export const dataReducer = (initialState = defaultState, action) =>
         break;
       case lookupData.success.actionType:
         draftState.isLoading = false;
-        draftState.data = action.payload;
+        draftState.transactions = action.payload;
         break;
     }
   });

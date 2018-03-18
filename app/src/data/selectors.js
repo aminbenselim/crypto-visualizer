@@ -7,7 +7,8 @@ export const requestFailed = state => state.requestFailed;
 
 // preIco selectors
 
-export const preIcoTransactions = state => state.data && state.data.preIco;
+export const preIcoTransactions = state =>
+  state.data.transactions && state.data.transactions.preIco;
 
 export const preIcoAmountsInEuro = createSelector(
   preIcoTransactions,
@@ -45,7 +46,8 @@ export const totalPreIcoAmountInEuro = createSelector(
 
 // ico selectors
 
-export const icoTransactions = state => state.data.ico;
+export const icoTransactions = state =>
+  state.data.transactions && state.data.transactions.ico;
 
 export const icoAmountsInEuro = createSelector(
   icoTransactions,
