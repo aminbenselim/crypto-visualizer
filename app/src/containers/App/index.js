@@ -1,20 +1,17 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-import { Home, PreICO, ICO } from '../index';
+import { Home, PreIco, ico } from '../index';
+import { Navbar} from '../../components'
+import styles from './App.scss';
 
 export const App = () => (
-  <div>
-    <header>
-      <Link to="/">Home</Link>
-      <Link to="/pre">PreICO</Link>
-      <Link to="/ICO">ICO</Link>
-    </header>
-
+  <div className={styles.container}>
+    <Navbar/>
     <main>
       <Route exact path="/" component={Home} />
-      <Route exact path="/pre" component={PreICO} />
-      <Route exact path="/ICO" component={ICO} />
+      <Route exact path="/pre" component={PreIco} />
+      <Route exact path="/ico" component={ico} />
     </main>
   </div>
 );

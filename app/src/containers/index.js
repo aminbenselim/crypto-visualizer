@@ -1,4 +1,4 @@
 export { default as Home } from './Home';
-export { default as PreICO } from './PreICO';
-export { default as ICO } from './ICO';
+export { default as PreIco } from './PreIco';
+export { default as ico } from './ico';
 export { App } from './App';

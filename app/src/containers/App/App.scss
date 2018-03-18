@@ -1,0 +1,10 @@
+@import '../../styles/constants';
+
+.container {
+  max-width: $website_max_width;
+  margin: 0 auto;
+
+  main {
+    margin: 0 $margin_xs;
+  }
+}

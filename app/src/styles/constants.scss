@@ -6,6 +6,9 @@ $color_primary_teal: #06CFC5;
 $color_primary_green: #3BE3AE;
 $color_primary_red: #F54269;
 
+$color_primary_background: #33394A;
+$color_secondary_background: #18223C;
+
 
 $color_primary_text_dark: #101530;
 $color_primary_text_light: #F6F7FB;
@@ -13,7 +16,8 @@ $color_secondary_text_dark: #33394A;
 $color_secondary_text_light: #5D616F;
 
 /* Sizes */
-$nav_bar_height: 32px;
+$nav_bar_height: 60px;
+$website_max_width:  1032px;
 
 /* margins */
 $margin_xxxs: 4px;
@@ -24,6 +28,7 @@ $margin_md: 32px;
 $margin_lg: 72px;
 
 /* Font sizes */
+$font14: 14px;
 $font16: 16px;
 $font24: 24px;
 $font34: 34px;
