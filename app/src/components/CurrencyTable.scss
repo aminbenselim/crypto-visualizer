@@ -1,0 +1,62 @@
+@import '../styles/constants';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width:100%;
+  border-radius: 16px;
+  background: $color_white_background;
+  color: $color_primary_text_dark;
+  margin: $margin_lg 0;
+
+  @media (max-width: $website_max_width) {
+    width: fit-content;
+    margin: $margin_lg auto;
+  }
+}
+
+.row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataRow {
+  width: 80%;
+  height: 80px;
+  margin: $margin_xs auto;
+
+  border: 2px solid $color_secondary_background;
+  display: flex;
+  flex-wrap: wrap;
+
+  .cell {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    margin: 0 $margin_xs;
+
+    img {
+      margin-right: $margin_xxs;
+    }
+  }
+
+  @media (max-width: $website_max_width) {
+    height: 240px;
+    width: auto;
+
+    flex-direction: column;
+
+    .cell {
+      align-self: center;
+    }
+  }
+}
+

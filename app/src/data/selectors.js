@@ -14,8 +14,8 @@ export const preIcoAmountsInEuro = createSelector(
   preIcoTransactions,
   preIcoTransactions => {
     let amounts = {
-      ETH: 0,
       BTC: 0,
+      ETH: 0,
       LTC: 0,
     };
     preIcoTransactions &&
@@ -53,8 +53,8 @@ export const icoAmountsInEuro = createSelector(
   icoTransactions,
   icoTransactions => {
     let amounts = {
-      ETH: 0,
       BTC: 0,
+      ETH: 0,
       LTC: 0,
     };
     icoTransactions &&

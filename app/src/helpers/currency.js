@@ -17,3 +17,5 @@ export const valuetoEUR = transaction => {
 
   return formatToFixed(convertedValue);
 };
+
+export const formatToEURString = value => value + ' EUR';

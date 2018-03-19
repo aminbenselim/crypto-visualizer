@@ -1,26 +1,45 @@
 import React from 'react';
-import { VictoryBar } from 'victory';
+import { Doughnut } from 'react-chartjs-2';
 
-const btcIcon = import('../styles/images/btc.svg');
-const ethIcon = import('../styles/images/eth.svg');
-const ltcIcon = import('../styles/images/ltc.svg');
+import { formatToEURString } from '../helpers/currency';
+import styles from './CurrencyTable.scss';
 
-const styles = import('./CurrencyTable.css');
+const btcIcon = require('../styles/images/btc.svg');
+const ethIcon = require('../styles/images/eth.svg');
+const ltcIcon = require('../styles/images/ltc.svg');
 
 const CurrencyTable = props => {
-  console.log(props);
   const { ETH, BTC, LTC } = props.data;
+  const currencyNames = Object.keys(props.data);
+
+  const data = {
+    labels: currencyNames,
+    datasets: [
+      {
+        data: [BTC, ETH, LTC],
+        backgroundColor: ['#6F3BFF', '#3BE3AE', '#F54269'],
+      },
+    ],
+  };
   return (
-    <div className={styles.table}>
-      <VictoryBar
-        height={200}
-        data={[
-          { x: 1, y: BTC, label: 'BTC' },
-          { x: 2, y: ETH, label: 'ETH' },
-          { x: 3, y: LTC, label: 'LTC' },
-        ]}
-        horizontal
-      />
+    <div className={styles.container}>
+      <div className={styles.chartRow}>
+        <Doughnut data={data} width={400} height={300} />
+      </div>
+      <div className={styles.dataRow}>
+        <div className={styles.cell}>
+          <img src={btcIcon} alt="bitcoin icon" />
+          <h2>{formatToEURString(BTC)}</h2>
+        </div>
+        <div className={styles.cell}>
+          <img src={ethIcon} alt="ethereum icon" />
+          <h2>{formatToEURString(ETH)}</h2>
+        </div>
+        <div className={styles.cell}>
+          <img src={ltcIcon} alt="litecoin icon" />
+          <h2>{formatToEURString(LTC)}</h2>
+        </div>
+      </div>
     </div>
   );
 };

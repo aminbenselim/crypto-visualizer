@@ -7,7 +7,6 @@ import { icoAmountsInEuro } from '../../data/selectors';
 
 const ico = props => (
   <React.Fragment>
-    <h1> ICO</h1>
     <CurrencyTable data={props.icoAmountsInEuro} />
   </React.Fragment>
 );
