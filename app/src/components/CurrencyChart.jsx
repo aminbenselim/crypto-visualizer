@@ -2,13 +2,13 @@ import React from 'react';
 import { Doughnut } from 'react-chartjs-2';
 
 import { formatToEURString } from '../helpers/currency';
-import styles from './CurrencyTable.scss';
+import styles from './CurrencyChart.scss';
 
 const btcIcon = require('../styles/images/btc.svg');
 const ethIcon = require('../styles/images/eth.svg');
 const ltcIcon = require('../styles/images/ltc.svg');
 
-const CurrencyTable = props => {
+const CurrencyChart = props => {
   const { ETH, BTC, LTC } = props.data;
   const currencyNames = Object.keys(props.data);
 
@@ -44,4 +44,4 @@ const CurrencyTable = props => {
   );
 };
 
-export default CurrencyTable;
+export default CurrencyChart;

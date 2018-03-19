@@ -82,3 +82,13 @@ export const totalIcoAmountInEuro = createSelector(
       ),
     ),
 );
+
+export const totalAmountsInEuroByCurrency = createSelector(
+  preIcoAmountsInEuro,
+  icoAmountsInEuro,
+  (preIcoAmountsInEuro, icoAmountsInEuro) => ({
+    BTC: formatToFixed(preIcoAmountsInEuro.BTC + icoAmountsInEuro.BTC),
+    ETH: formatToFixed(preIcoAmountsInEuro.ETH + icoAmountsInEuro.ETH),
+    LTC: formatToFixed(preIcoAmountsInEuro.LTC + icoAmountsInEuro.LTC),
+  }),
+);

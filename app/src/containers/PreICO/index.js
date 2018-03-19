@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { CurrencyTable } from '../../components';
+import { CurrencyChart } from '../../components';
 import { preIcoAmountsInEuro } from '../../data/selectors';
 
 const PreIco = props => {
   return (
     <React.Fragment>
-      <CurrencyTable data={props.preIcoAmountsInEuro} />
+      <CurrencyChart data={props.preIcoAmountsInEuro} />
     </React.Fragment>
   );
 };
